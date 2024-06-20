@@ -133,10 +133,10 @@ document.querySelectorAll('.js-delete-link')
         });
     });
 
-document.querySelector('.js-delivery-option')
+document.querySelectorAll('.js-delivery-option')
     .forEach((element)=>{
        element.addEventListener('click',()=>{
         const {productId,deliveryOptionId}=element.dataset;
-        updateDeliveryOption(productId,deliveryOptionId)
+        updateDeliveryOption(productId,deliveryOptionId);
        }) 
     })
