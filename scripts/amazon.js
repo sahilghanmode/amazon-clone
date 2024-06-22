@@ -39,7 +39,7 @@ products.forEach((product)=>{
         </div>
 
         <div class="product-quantity-container">
-        <select>
+        <select id="js-product-quantity">
             <option selected value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -67,7 +67,10 @@ products.forEach((product)=>{
     </div>`;
     
     document.querySelector('.js-products-grid').innerHTML=productHTML;
+    
 });
+
+
 
 document.querySelectorAll('.js-add-button')
     .forEach((button)=>{
@@ -80,4 +83,7 @@ document.querySelectorAll('.js-add-button')
             updateCartQuantity();
         });
     })
+
+
+
 
